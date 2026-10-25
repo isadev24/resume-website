@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta name="robots" content="noindex, nofollow">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>Isaias Pizarro</h1>
-        <p>Computer Science Student</p>
-        <img src="images/profile.jpg" alt="hello" class="profile-photo">
+        <p>Computer Science Student | Beginning Web Developer</p>
+        <img class="profile-photo" src="images/profile.jpg" alt="Illustrated profile image of a student waving hello">
     </header>
 
     <nav>
@@ -21,37 +20,64 @@
     </nav>
 
     <main>
-        <section id="summary">
-            <h2>Summary/Objective</h2>
-            <p class="intro">
-                I am a Computer science student interested in programming and creating projects with code,
-                like video games, programs, apps, and websites.
+        <section>
+            <h2>Summary / Objective</h2>
+            <p>
+                Computer science student interested in programming and creating projects with code,
+                including video games, programs, apps, and websites. My goal is to keep developing
+                my HTML and CSS skills and continue learning web development.
             </p>
         </section>
 
-        <section>
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="project-container">
+                <article class="project">
+                    <h3>Responsive Portfolio</h3>
+                    <p>This website uses Flexbox, Grid, and media queries to fit different screens.</p>
+                </article>
+                <article class="project">
+                    <h3>Resume Page</h3>
+                    <p>A resume section to know me.</p>
+                    <a href="#education">View education</a>
+                </article>
+                <article class="project">
+                    <h3>Hobbies Page</h3>
+                    <p>Page about me.</p>
+                    <a href="hobbies.html">View hobbies</a>
+                </article>
+                <article class="project">
+                    <h3>Contact Page</h3>
+                    <p>Contact information and email links.</p>
+                    <a href="contact.html">View contact</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="education">
             <h2>Education</h2>
-            <h3>Computer Science/Web Development Program</h3>
-            <p> Sul Ross State University </p>
+            <h3>Computer Science Program / Web Page Development</h3>
+            <p>Sul Ross State University</p>
         </section>
 
         <section>
             <h2>Work Experience</h2>
             <article>
                 <h3>Student Web Development Project</h3>
-                <p>Course 2026</p>
+                <p>Course Project | 2026</p>
                 <ul>
                     <li>Built a multi page website using complete HTML5 document structure.</li>
                     <li>Organized page content with semantic HTML elements.</li>
-                    <li>Connected pages with relative links and images with alt text.</li>
+                    <li>Connected pages with relative links and used images with meaningful alt text.</li>
                 </ul>
             </article>
         </section>
 
-        <section class="skills">
+        <section id="skills">
             <h2>Skills</h2>
-            <ul>
+            <ul class="skills">
                 <li>HTML5</li>
+                <li>CSS Layout</li>
                 <li>Semantic HTML page structure</li>
                 <li>Links, images, and relative file paths</li>
                 <li>Basic programming</li>
@@ -64,13 +90,13 @@
             <ul>
                 <li>Created an introductory HTML5 webpage project.</li>
                 <li>Completed a semantic HTML resume and portfolio website project.</li>
-                <li>Practiced building and testing a three-page website with good navigation.</li>
+                <li>Practiced building and testing a three page website with consistent navigation.</li>
             </ul>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Isaias Pizarro.</p>
+        <p>&copy; 2026 Isaias Pizarro. Created for a class assignment.</p>
     </footer>
 </body>
 </html>
