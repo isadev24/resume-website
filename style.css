@@ -71,3 +71,38 @@ nav a { display: inline-block; padding: 6px 12px; }
     h1 { font-size: 26px; }
     h2 { font-size: 22px; }
 }
+
+
+/* Contact form: simple, readable controls */
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 500px;
+}
+#contact label { font-weight: bold; }
+#contact input, #contact select, #contact textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font: inherit;
+}
+#contact button {
+    background: #222;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#contact button:hover { background: #444; }
+#contact input:focus-visible,
+#contact select:focus-visible,
+#contact textarea:focus-visible,
+#contact button:focus-visible {
+    outline: 3px solid #2563eb;
+    outline-offset: 2px;
+}

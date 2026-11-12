@@ -16,7 +16,7 @@
     <nav>
         <a href="index.html">Home</a>
         <a href="hobbies.html">Hobbies</a>
-        <a href="contact.html">Contact</a>
+        <a href="#contact">Contact</a>
     </nav>
 
     <main>
@@ -92,6 +92,34 @@
                 <li>Completed a semantic HTML resume and portfolio website project.</li>
                 <li>Practiced building and testing a three page website with consistent navigation.</li>
             </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Have a question? Fill out the form below.</p>
+
+            <form onsubmit="event.preventDefault()">
+                <label for="fullname">Full Name: *</label>
+                <input type="text" id="fullname" name="fullname" minlength="2" maxlength="50" required>
+
+                <label for="email">Email Address: *</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="reason">Reason for Contacting:</label>
+                <select id="reason" name="reason">
+                    <option value="general">General Question</option>
+                    <option value="project">Project Collaboration</option>
+                    <option value="feedback">Feedback</option>
+                </select>
+
+                <label for="phone">Phone Number (optional):</label>
+                <input type="tel" id="phone" name="phone" maxlength="20">
+
+                <label for="message">Message: *</label>
+                <textarea id="message" name="message" rows="5" minlength="10" maxlength="500" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
         </section>
     </main>
 
